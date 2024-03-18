@@ -1,0 +1,159 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header .menu-btn {
+  display: none;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  font-size: 1.1rem;
+}
+
+/* Mobile menu styles */
+header .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 99;
+}
+
+header .mobile-menu.open {
+  transform: translateX(0%);
+}
+
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+  font-size: 1.2rem;
+}
+
+/* Hero section styles */
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_768/https://assets.designhill.com/design-blog/wp-content/uploads/2022/01/Top-13-T-shirt-Design-Trends-You-Shouldnt-Miss-768x439.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px #333;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 2px #333;
+}
+
+/* Products section styles */
+.products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.product {
+  margin-bottom: 50px;
+}
+
+.product img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* Testimonials section styles */
+.testimonials {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
